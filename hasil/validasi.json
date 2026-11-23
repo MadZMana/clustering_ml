@@ -1,0 +1,11 @@
+{
+    "inertia_library": 4836.084162519751,
+    "inertia_manual": 4836.084162519767,
+    "inertia_valid": true,
+    "centroid_max_difference": 3.885780586188048e-16,
+    "centroid_valid": true,
+    "jumlah_penempatan_berbeda": 0,
+    "silhouette_library": 0.04936377579830728,
+    "silhouette_manual": 0.04936377579830728,
+    "silhouette_valid": true
+}

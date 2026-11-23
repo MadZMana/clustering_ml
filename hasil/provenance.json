@@ -1,0 +1,67 @@
+{
+    "dataset": {
+        "nama": "SMS Spam Collection",
+        "sumber": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
+        "download_url": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+        "doi": "10.24432/C5CC84",
+        "sha256": "7d039a24a6083ed9ef0f806ebad56bbb976e3aeb8de05669173bfdc4996c239d",
+        "jumlah_sms_asli": 5574,
+        "jumlah_sms_digunakan": 5574
+    },
+    "preprocessing": {
+        "lowercase": true,
+        "whitespace_normalization": true,
+        "remove_digits": false,
+        "remove_urls": false,
+        "remove_duplicates": false
+    },
+    "representasi": {
+        "metode": "TF-IDF + Truncated SVD + Normalizer",
+        "ngram_range": [
+            1,
+            2
+        ],
+        "min_df": 2,
+        "max_df": 0.95,
+        "stop_words": "english",
+        "svd_components": 100,
+        "svd_explained_variance": 21.178903957379468
+    },
+    "model": {
+        "algoritma": "K-Means",
+        "k_candidates": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "best_k": 7,
+        "selection_metric": "Silhouette",
+        "selection_sample_size": 1200,
+        "n_init": 20,
+        "random_state": 42,
+        "max_iter": 300,
+        "tol": 0.0001
+    },
+    "hasil": {
+        "inertia": 4836.084162519751,
+        "silhouette_sample": 0.04936377579830728,
+        "dbi": 4.23775597560326,
+        "ch": 99.24458851482825,
+        "ari": 0.16091537459938868,
+        "nmi": 0.24107246550216196,
+        "iterasi": 38
+    },
+    "environment": {
+        "timestamp": "2026-11-23T14:08:11.863966",
+        "python": "3.13.16",
+        "numpy": "2.4.6",
+        "pandas": "2.2.3",
+        "scipy": "1.16.3",
+        "scikit_learn": "1.6.1",
+        "matplotlib": "3.10.0"
+    }
+}

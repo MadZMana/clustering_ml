@@ -1,0 +1,23 @@
+# Lingkungan Python dan cache
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Catatan eksekusi lokal
+logs/
+.env
+.env.*
+
+# Berkas penyusunan dokumen
+build/
+referensi_template/
+*.tex
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
